@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 export default function CoursesPreview(){
   const [courses, setCourses] = useState([]);
-  useEffect(()=>{ fetch('/api/courses').then(r=>r.json()).then(setCourses) }, []);
+  useEffect(()=>{ fetch('https://thinkplus-project.onrender.com').then(r=>r.json()).then(setCourses) }, []);
   return (
     <section>
       <h3 className="text-2xl font-bold mb-4">Popular Courses</h3>
