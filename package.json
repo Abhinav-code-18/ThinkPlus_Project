@@ -1,0 +1,16 @@
+{
+  "name": "thinkplus-vercel-ready",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+  "dev": "concurrently \"npm run server\" \"npm run client\"",
+  "server": "node backend/server.js",
+  "client": "npm run dev --prefix frontend"
+},
+  "engines": {
+    "node": "18.x"
+  },
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
